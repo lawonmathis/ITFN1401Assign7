@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact / Join – Destiny 2 Community Hub</title>
+
+  <meta name="author" content="Lawon Mathis">
+  <meta name="description" content="Destiny 2 contact and fireteam join page. Connect with Guardians, request invites, and sign up for gameplay updates. Destiny 2, fireteam, contact form.">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body onload="showLastModified()">
+  <header>
+    
+    <h1>Contact / Join a Fireteam</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html" aria-current="page">Contact / Join</a></li>
+      <li><a href="fireteam.html">Fireteam Finder</a></li>
+      <li><a href="builds.html">Builds</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <p>Fill out this form if you want to play, ask a question, or get updates.</p>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Your Information</legend>
+
+        <label for="gamerTag">Gamer Tag:</label><br>
+        <input type="text" id="gamerTag" name="gamerTag" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="platform">Platform:</label><br>
+        <select id="platform" name="platform">
+          <option value="">Select one</option>
+          <option value="ps">PlayStation</option>
+          <option value="xbox">Xbox</option>
+          <option value="pc">PC</option>
+        </select><br><br>
+
+        <p>Class:</p>
+        <label><input type="radio" name="class" value="Hunter"> Hunter</label>
+        <label><input type="radio" name="class" value="Titan"> Titan</label>
+        <label><input type="radio" name="class" value="Warlock"> Warlock</label><br><br>
+
+        <p>Activities:</p>
+        <label><input type="checkbox" name="activity" value="Raids"> Raids</label>
+        <label><input type="checkbox" name="activity" value="Trials"> Trials</label>
+        <label><input type="checkbox" name="activity" value="Nightfalls"> Nightfalls</label><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+
+        <input type="submit" value="Send Request">
+      </fieldset>
+    </form>
+  </main>
+
+  <footer>
+    <p>Contact: lmathis10@student.clayton.edu • Assignment Due: November 16, 2025</p>
+    <div id="lastModified"></div>
+  </footer>
+</body>
+</html>
